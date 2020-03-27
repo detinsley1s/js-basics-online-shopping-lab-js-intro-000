@@ -38,6 +38,9 @@ function viewCart() {
 
 function total() {
   // write your code here
+  return cart.reduce((acc, v) => {
+    acc + v.itemPrice
+  }, 0)
 }
 
 function removeFromCart(item) {
