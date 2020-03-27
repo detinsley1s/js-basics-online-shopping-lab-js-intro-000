@@ -20,7 +20,7 @@ function viewCart() {
   if (cart.length > 0) {
     let s = 'In your cart, you have ';
     for(let i = 0; i < cart.length; ++i) {
-      if (i == cart.length - 1) {
+      if (cart.length > 1 && i == cart.length - 1) {
         s += 'and ';
       }
       s += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}`;
