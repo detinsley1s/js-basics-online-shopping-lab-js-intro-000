@@ -38,10 +38,11 @@ function viewCart() {
 
 function total() {
   // write your code here
-  let i = cart.reduce((acc, v) => {
-    acc + v.itemPrice
-  }, 0)
-  return i
+  let total = 0
+  for (c of cart) {
+    total += c['itemPrice']
+  }
+  return total
 }
 
 function removeFromCart(item) {
