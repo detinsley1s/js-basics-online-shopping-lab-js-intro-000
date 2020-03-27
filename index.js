@@ -29,6 +29,7 @@ function viewCart() {
       }
     }
     s += '.';
+    console.log(s);
     return s;
   }
   else {
