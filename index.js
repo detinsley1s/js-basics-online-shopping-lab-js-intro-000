@@ -39,7 +39,7 @@ function viewCart() {
 function total() {
   // write your code here
   let total = 0
-  for (c of cart) {
+  for (let c of cart) {
     total += c['itemPrice']
   }
   return total
